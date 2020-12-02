@@ -46,9 +46,9 @@ public class DialogController : MonoBehaviour
 
         //The actual sentence in queue
         Sentence sentenceInstance = _sentencesQueue.Dequeue();
-        _characterNameText.text = sentenceInstance._character.CharacterName;
+        _characterNameText.text = sentenceInstance.Character.CharacterName;
         StopAllCoroutines();
-        StartCoroutine(letterWriter(sentenceInstance._sentence));
+        StartCoroutine(letterWriter(sentenceInstance.SentenceText));
         
     }
 

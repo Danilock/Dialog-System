@@ -4,6 +4,7 @@ using UnityEngine;
 [System.Serializable]
 public class Sentence
 {
-    public DialogCharacter _character;
-    [TextArea(3, 5)] public string _sentence;
+    public DialogCharacter Character;
+    [TextArea(3, 5)] public string SentenceText;
+    public Texture2D Portrait;
 } 

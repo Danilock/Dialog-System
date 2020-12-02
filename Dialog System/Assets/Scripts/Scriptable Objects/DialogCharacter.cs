@@ -6,5 +6,6 @@ using UnityEngine;
 public class DialogCharacter : ScriptableObject
 {
     public string CharacterName;
-    public Texture2D CharacterImage;
+
+    public Texture2D[] Portraits;
 }
